@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 import { ListingCard } from "@/components/ListingCard";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { CATEGORIES, type Category } from "@/lib/categories";
+import { CATEGORIES } from "@/lib/categories";
 import { supabase } from "@/integrations/supabase/client";
 import type { Database } from "@/integrations/supabase/types";
 
@@ -56,7 +56,7 @@ function Browse() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate({ search: (prev) => ({ ...prev, q: search }) });
+    navigate({ search: { q: search, category } });
   };
 
   return (
@@ -141,5 +141,3 @@ function Browse() {
   );
 }
 
-// Suppress unused warning
-void Category;
