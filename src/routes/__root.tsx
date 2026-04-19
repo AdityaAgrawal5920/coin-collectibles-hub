@@ -39,6 +39,13 @@ export const Route = createRootRoute({
       { name: "author", content: "Numismatica" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Numismatica — Rare Coins, Notes & Collectibles Marketplace" },
+      { name: "twitter:title", content: "Numismatica — Rare Coins, Notes & Collectibles Marketplace" },
+      { name: "description", content: "A marketplace for buying, selling, and identifying coins and collectibles." },
+      { property: "og:description", content: "A marketplace for buying, selling, and identifying coins and collectibles." },
+      { name: "twitter:description", content: "A marketplace for buying, selling, and identifying coins and collectibles." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/alzpiQ2K5RgnKS1hHV8789j2PEx1/social-images/social-1776588718594-note.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/alzpiQ2K5RgnKS1hHV8789j2PEx1/social-images/social-1776588718594-note.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
